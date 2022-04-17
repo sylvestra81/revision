@@ -1,0 +1,48 @@
+#!/bin/Groovy
+pipeline {
+     agent any
+     stages {
+          stage('Docker') {
+
+               steps {
+                    echo 'Is docker running'
+
+               }
+          }
+          stage('Start docker') {
+
+               steps {
+                    sh'sudo systemctl restart docker'
+
+               }
+          }
+          stage ('Check docker status') {
+
+               steps {
+                    sh 'sudo systemctl status docker'
+
+               }
+          }
+          stage('check docker images') {
+
+               steps {
+                    sh 'sudo docker ps -a'
+
+               }
+          }
+           stage('Check docker version') {
+
+               steps {
+                    sh 'sudo docker --version'
+
+               }
+           }
+            stage('Docker processes') {
+
+               steps {
+                    sh 'sudo docker ps'
+
+               }
+          }
+      }
+   }
