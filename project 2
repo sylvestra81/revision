@@ -1,5 +1,4 @@
- #!/bin/Groovy
-  pipeline {
+pipeline {
       agent any
       stages {
           stage( 'what is your name') {
@@ -11,3 +10,4 @@
            }
        }
   }
+
