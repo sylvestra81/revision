@@ -1,0 +1,13 @@
+ #!/bin/Groovy
+  pipeline {
+      agent any
+      stages {
+          stage( 'what is your name') {
+
+              steps {
+                  echo 'My name is Slye'
+
+              }
+           }
+       }
+  }
