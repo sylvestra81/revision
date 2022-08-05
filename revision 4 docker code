@@ -32,7 +32,7 @@ pipeline {
           }
            stage('Check docker version') {
 
-               step {
+               steps {
                     sh 'sudo docker --version'
 
                }
