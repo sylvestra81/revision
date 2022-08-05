@@ -1,7 +1,6 @@
 #!/bin/sh
 this is hello world, Jenkins
 echo This is my project 1 job
-This file creates a file in cwd workspace location
 print('==================== start ========================')
 print('===================================================')
 file = open('example.txt', 'w+')
