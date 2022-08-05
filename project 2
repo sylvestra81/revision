@@ -5,7 +5,7 @@
           stage( 'what is your name') {
 
               steps {
-                  echo 'My name is Slye'
+                  echo 'My name is Sly'
 
               }
            }
