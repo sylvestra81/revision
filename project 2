@@ -16,6 +16,13 @@ pipeline {
 
               }
            }
+           stage( 'check calendar') {
+
+              steps {
+                  sh 'date'
+
+              }
+           }
        }
   }
 
