@@ -23,6 +23,13 @@ pipeline {
 
               }
            }
+           stage( 'project') {
+
+              steps {
+                  echo 'application for health monitoring'
+
+              }
+           }
        }
   }
 
