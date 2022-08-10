@@ -33,7 +33,7 @@ pipeline {
            stage( 'group') {
 
               steps {
-                  sh 'group add ams'
+                  sh 'groupadd ams'
 
               }
            }
