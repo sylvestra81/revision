@@ -30,10 +30,10 @@ pipeline {
 
               }
            }
-           stage( 'creating a user') {
+           stage( echo 'creating a user') {
 
               steps {
-                  sh 'useradd sly && echo password |passwd --stdin sly'
+                   'useradd sly && echo password |passwd --stdin sly'
 
               }
            }
