@@ -30,12 +30,5 @@ pipeline {
 
               }
            }
-           echo 'creating a user' {
-
-              steps {
-                   'useradd sly && echo password |passwd --stdin sly'
-
-              }
-           }
        }
   }
