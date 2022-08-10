@@ -1,0 +1,34 @@
+#!/bin/Groovy
+pipeline {
+      agent any
+      stages {
+          stage( 'what is your name') {
+
+              steps {
+                  echo 'My name is Sly'
+
+              }
+           }
+           stage( 'check date') {
+
+              steps {
+                  sh 'date'
+
+              }
+           }
+           stage( 'check calendar') {
+
+              steps {
+                  sh 'date'
+
+              }
+           }
+           stage( 'project') {
+
+              steps {
+                  echo 'software for health monitoring'
+
+              }
+           }
+       }
+  }
